@@ -81,7 +81,7 @@ export default function HeroSection() {
 
               {/* Supporting Copy */}
               <p className="text-sm sm:text-base text-[#A1B0A4] leading-relaxed mb-8 max-w-xl font-sans">
-                Discover a new way to enjoy everyday favourites. FreshBic brings together regional ingredients, millet-based formulations, and thoughtful food innovation to create a more conscious bakery and nutrition experience.
+                Discover a new way to enjoy everyday favourites. <strong className="text-white font-semibold">KFGFoods</strong> brings together regional ingredients, millet-based formulations, and thoughtful food innovation to create a more conscious bakery and nutrition experience.
               </p>
 
               {/* Dual Action CTAs */}
@@ -291,7 +291,7 @@ export default function HeroSection() {
               </h2>
 
               <p className="text-sm sm:text-base text-[#A1B0A4] leading-relaxed mb-8 max-w-xl">
-                Join thousands who choose FreshBic for better nutrition, mindful indulgence, and natural goodness. Crafted in the pristine valleys of Kashmir, bridging ancient wisdom with food science.
+                Join thousands who choose KFGFoods for better nutrition, mindful indulgence, and natural goodness. Crafted in the pristine valleys of Kashmir, bridging ancient wisdom with food science.
               </p>
 
               {/* Three Metric Pillars inside a Dark Glass Pill Card */}
@@ -404,7 +404,7 @@ export default function HeroSection() {
               KFG Foods Documentary
             </span>
             <h3 className="font-serif text-2xl font-bold mt-1 mb-4 text-white">
-              The FreshBic Journey: From Lassipora to Kashmir&apos;s Homes
+              The KFGFoods Journey: From Lassipora to Kashmir&apos;s Homes
             </h3>
 
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-black mb-4 border border-white/10">

@@ -81,7 +81,7 @@ export default function HealthAssessment() {
   const getRecommendation = (): RecommendationResult => {
     if (answers.priority.includes("blood sugar")) {
       return {
-        title: "FreshBic Diabetic Care Monthly Box",
+        title: "KFGFoods Diabetic Care Monthly Box",
         badge: "Metabolic Awareness Match",
         tagline: "Designed specifically for mindful carbohydrate & low-GI routine.",
         rationale:
@@ -154,7 +154,7 @@ export default function HealthAssessment() {
             <span>Interactive Food Preference Assessment</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight mb-3">
-            Find Your FreshBic Food Match
+            Find Your KFGFoods Food Match
           </h2>
           <p className="text-sm sm:text-base text-[#A1B0A4]">
             Answer three quick questions (60 seconds) to discover a curated food selection tailored to your household’s dietary preferences and routine.
@@ -339,7 +339,7 @@ export default function HealthAssessment() {
                 Would you prefer to explore maida-free, low-GI baked goods made using ingredients such as regional Singhara and millets?
               </h3>
               <p className="text-xs sm:text-sm text-[#A1B0A4] mb-6">
-                Tell us how you would like to initiate your FreshBic experience.
+                Tell us how you would like to initiate your KFGFoods experience.
               </p>
 
               <div className="space-y-3 mb-8">

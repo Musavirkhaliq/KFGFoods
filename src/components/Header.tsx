@@ -82,14 +82,14 @@ export default function Header() {
               <div className="flex flex-col">
                 <div className="flex items-center gap-1.5">
                   <span className="font-serif text-xl sm:text-2xl font-black tracking-tight text-white group-hover:text-[#F59E0B] transition-colors">
-                    FreshBic
+                    KFGFoods
                   </span>
                   <span className="text-[9px] sm:text-[10px] font-mono tracking-widest uppercase bg-emerald-950/80 text-emerald-300 border border-emerald-800/50 px-1.5 py-0.5 rounded-full font-bold">
-                    KFGFoods
+                    Kashmir
                   </span>
                 </div>
                 <span className="text-[10px] text-[#A1B0A4] font-sans -mt-0.5 hidden sm:inline">
-                  by KFG Foods Private Limited
+                  Wholesome Food, Happier You
                 </span>
               </div>
             </Link>
@@ -270,7 +270,7 @@ export default function Header() {
                   <Image src="/logo.jpeg" alt="KFGFoods" fill className="object-cover" />
                 </div>
                 <div>
-                  <div className="font-serif font-black text-sm text-white">KFGFoods • FreshBic</div>
+                  <div className="font-serif font-black text-sm text-white">KFGFoods</div>
                   <div className="text-[11px] text-[#A1B0A4]">Wholesome Food, Happier You</div>
                 </div>
               </div>

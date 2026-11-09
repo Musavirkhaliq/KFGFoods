@@ -29,7 +29,7 @@ export function createWhatsAppUrl(message: string): string {
  * Pre-filled message for general enquiries
  */
 export function getGeneralWhatsAppUrl(): string {
-  const msg = "Hello FreshBic, I would like to know more about your preventive bakery and nutrition products.";
+  const msg = "Hello KFGFoods, I would like to know more about your healthy bakery and preventive nutrition products.";
   return createWhatsAppUrl(msg);
 }
 
@@ -37,7 +37,7 @@ export function getGeneralWhatsAppUrl(): string {
  * Pre-filled message for a specific product
  */
 export function getProductWhatsAppUrl(productName: string): string {
-  const msg = `Hello FreshBic, I am interested in ${productName}. Please share product details, pricing, and availability.`;
+  const msg = `Hello KFGFoods, I am interested in ${productName}. Please share product details, pricing, and availability.`;
   return createWhatsAppUrl(msg);
 }
 
@@ -45,7 +45,7 @@ export function getProductWhatsAppUrl(productName: string): string {
  * Pre-filled message for subscriptions
  */
 export function getSubscriptionWhatsAppUrl(planName: string): string {
-  const msg = `Hello FreshBic, I am interested in the ${planName}. Please share monthly subscription details, packaging sizes, and delivery schedule.`;
+  const msg = `Hello KFGFoods, I am interested in the ${planName}. Please share monthly subscription details, packaging sizes, and delivery schedule.`;
   return createWhatsAppUrl(msg);
 }
 
@@ -54,7 +54,7 @@ export function getSubscriptionWhatsAppUrl(planName: string): string {
  */
 export function getAssessmentWhatsAppUrl(data: AssessmentAnswers): string {
   const msg =
-    `Hello FreshBic! I completed the Food Match Assessment on your website.\n\n` +
+    `Hello KFGFoods! I completed the Food Match Assessment on your website.\n\n` +
     `• Household Bakery Consumption: ${data.bakeryFrequency}\n` +
     `• Wellness Priority: ${data.priority}\n` +
     `• Preferred Format: ${data.preference}\n` +

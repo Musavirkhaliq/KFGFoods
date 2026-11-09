@@ -25,7 +25,7 @@ assert.strictEqual(WHATSAPP_NUMBER, "916006922754");
 
 const generalUrl = getGeneralWhatsAppUrl();
 assert(generalUrl.startsWith("https://wa.me/916006922754?text="));
-assert(generalUrl.includes("FreshBic"));
+assert(generalUrl.includes("KFGFoods"));
 
 const productUrl = getProductWhatsAppUrl("Water Chestnut (Singhara) Cookies");
 assert(productUrl.includes("Water%20Chestnut%20(Singhara)%20Cookies"));
@@ -38,9 +38,9 @@ const assessUrl = getAssessmentWhatsAppUrl({
   bakeryFrequency: "Daily / Frequently",
   priority: "Blood sugar choices",
   preference: "Subscription",
-  recommendedBox: "FreshBic Diabetic Care Monthly Box",
+  recommendedBox: "KFGFoods Diabetic Care Monthly Box",
 });
-assert(assessUrl.includes("FreshBic%20Diabetic%20Care%20Monthly%20Box"));
+assert(assessUrl.includes("KFGFoods%20Diabetic%20Care%20Monthly%20Box"));
 
 const b2bUrl = getB2BWhatsAppUrl({
   fullName: "Tariq Ahmad",
