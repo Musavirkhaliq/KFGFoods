@@ -86,7 +86,7 @@ body {
 
 /* Cursive flourish font */
 .font-cursive {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Caveat', cursive, sans-serif;
+  font-family: var(--font-caveat), 'Caveat', 'Brush Script MT', cursive, sans-serif;
 }
 
 /* Custom scrollbar */

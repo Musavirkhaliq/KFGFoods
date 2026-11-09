@@ -1,10 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Merriweather, Inter, JetBrains_Mono } from "next/font/google";
+import { Merriweather, Inter, JetBrains_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 
 const merriweather = Merriweather({
   variable: "--font-merriweather",
   weight: ["300", "400", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -168,7 +175,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${merriweather.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
+      className={`${merriweather.variable} ${inter.variable} ${jetbrainsMono.variable} ${caveat.variable} scroll-smooth`}
     >
       <head>
         <script
