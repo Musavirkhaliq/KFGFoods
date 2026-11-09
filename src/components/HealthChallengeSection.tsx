@@ -6,29 +6,29 @@ import { REGIONAL_HEALTH_STATS } from "@/data/healthChallenge";
 
 export default function HealthChallengeSection() {
   return (
-    <section id="health-challenge" className="py-16 lg:py-24 bg-white border-b border-[#E8EEE6]">
+    <section id="health-challenge" className="py-16 lg:py-24 bg-[#050D06] border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#DC2626] mb-3 font-semibold bg-red-50 px-3 py-1 rounded-full border border-red-200">
-            <Activity className="w-3.5 h-3.5 text-[#DC2626]" />
+          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-red-400 mb-3 font-semibold bg-red-950/40 px-3.5 py-1 rounded-full border border-red-500/30">
+            <Activity className="w-3.5 h-3.5 text-red-400" />
             <span>Public Health & Dietary Context</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B5E20] leading-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             Why Kashmir Needs a Better Everyday Food Ecosystem
           </h2>
-          <p className="text-base sm:text-lg text-[#565e55] leading-relaxed">
-            In Kashmiri households, tea-time is sacred. Morning and afternoon cups of Noon Chai and Kehwa are traditionally accompanied by beloved staples like <span className="text-[#242923] font-medium italic">tsot, kulcha, sweet biscuits, and tea-pastries</span>. However, conventional commercial bakery production has become predominantly dependent on ultra-refined flour (Maida), high sucrose additions, and hydrogenated vegetable shortening.
+          <p className="text-sm sm:text-base text-[#A1B0A4] leading-relaxed">
+            In Kashmiri households, tea-time is sacred. Morning and afternoon cups of Noon Chai and Kehwa are traditionally accompanied by beloved staples like <span className="text-white font-medium italic">tsot, kulcha, sweet biscuits, and tea-pastries</span>. However, conventional commercial bakery production has become predominantly dependent on ultra-refined flour (Maida), high sucrose additions, and hydrogenated vegetable shortening.
           </p>
         </div>
 
-        {/* Editorial Data Visualization Grid */}
+        {/* Editorial Data Visualization Grid in Dark Glass */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {REGIONAL_HEALTH_STATS.map((stat, idx) => (
             <div
               key={idx}
-              className="bg-[#FAF8F5] rounded-3xl p-6 border border-[#E8EEE6] hover:border-[#CBD5E1] transition-all hover:shadow-md flex flex-col justify-between"
+              className="glass-card-dark rounded-3xl p-6 border border-white/10 hover:border-amber-500/40 transition-all hover:shadow-2xl flex flex-col justify-between group"
             >
               <div>
                 {/* Metric value with JetBrains Mono tabular styling */}
@@ -36,31 +36,31 @@ export default function HealthChallengeSection() {
                   <span
                     className={`font-mono text-4xl sm:text-5xl font-black tracking-tight ${
                       stat.accent === "red"
-                        ? "text-[#DC2626]"
+                        ? "text-red-400 drop-shadow-[0_0_12px_rgba(239,68,68,0.3)]"
                         : stat.accent === "amber"
-                        ? "text-[#D97706]"
-                        : "text-[#1B5E20]"
+                        ? "text-[#F59E0B] drop-shadow-[0_0_12px_rgba(245,158,11,0.3)]"
+                        : "text-emerald-400"
                     }`}
                   >
                     {stat.value}
                   </span>
-                  <span className="text-xs font-mono text-[#565e55] uppercase tracking-wider bg-white px-2 py-0.5 rounded border border-[#E8EEE6]">
+                  <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider bg-white/5 px-2 py-0.5 rounded border border-white/10">
                     Cohort Data
                   </span>
                 </div>
 
-                <h3 className="font-serif text-lg font-bold text-[#242923] mb-2 leading-snug">
+                <h3 className="font-serif text-lg font-bold text-white mb-2 leading-snug group-hover:text-amber-300 transition-colors">
                   {stat.label}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#565e55] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#A1B0A4] leading-relaxed">
                   {stat.detail}
                 </p>
               </div>
 
               {/* Source attribution citation */}
-              <div className="mt-6 pt-4 border-t border-[#E8EEE6] flex items-start gap-1.5 text-[11px] font-mono text-[#768075]">
-                <FileText className="w-3.5 h-3.5 flex-shrink-0 mt-0.5 text-[#D97706]" />
+              <div className="mt-6 pt-4 border-t border-white/10 flex items-start gap-1.5 text-[11px] font-mono text-gray-400">
+                <FileText className="w-3.5 h-3.5 flex-shrink-0 mt-0.5 text-[#F59E0B]" />
                 <span className="leading-tight">{stat.source}</span>
               </div>
             </div>
@@ -68,34 +68,34 @@ export default function HealthChallengeSection() {
         </div>
 
         {/* Responsible Scientific Disclaimer Box */}
-        <div className="bg-[#FAF8F5] rounded-2xl p-5 sm:p-6 border border-[#E8EEE6] mb-12 flex items-start gap-3.5">
-          <AlertCircle className="w-5 h-5 text-[#D97706] flex-shrink-0 mt-0.5" />
-          <div className="text-xs sm:text-sm text-[#565e55] leading-relaxed">
-            <strong className="text-[#242923] font-semibold">Methodology & Health Attribution Context:</strong>{" "}
+        <div className="glass-card-dark rounded-2xl p-5 sm:p-6 border border-amber-500/25 mb-12 flex items-start gap-3.5">
+          <AlertCircle className="w-5 h-5 text-[#F59E0B] flex-shrink-0 mt-0.5" />
+          <div className="text-xs sm:text-sm text-[#A1B0A4] leading-relaxed">
+            <strong className="text-white font-semibold">Methodology & Health Attribution Context:</strong>{" "}
             The epidemiological indicators presented above are drawn from peer-reviewed public health literature, including the ICMR-INDIAB national cohort study. They are provided for general educational awareness regarding regional metabolic health patterns. KFG Foods does not assert that conventional bakery consumption is the sole cause of these chronic metabolic conditions, nor do FreshBic products claim to prevent, diagnose, or cure any clinical disorder.
           </div>
         </div>
 
         {/* Transition statement to Section 5 */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#1B5E20] to-[#2E7D32] text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-lg">
-          <div className="max-w-2xl">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#D97706] font-bold">
+        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#0C2414] via-[#0E2C18] to-[#12381F] border border-emerald-500/30 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
+          <div className="max-w-2xl relative z-10">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#F59E0B] font-bold">
               The Path Forward
             </span>
             <h3 className="font-serif text-2xl sm:text-3xl font-bold mt-1 text-white">
               “Better food choices begin with better ingredients.”
             </h3>
-            <p className="text-sm sm:text-base text-emerald-100 mt-2">
+            <p className="text-xs sm:text-sm text-emerald-200/80 mt-2">
               By replacing ultra-processed carbohydrates with indigenous water chestnut flour, diverse ancient millets, and clean natural sweetness, FreshBic helps families protect their cherished traditions while taking thoughtful care of their metabolic health.
             </p>
           </div>
 
           <a
             href="#science"
-            className="inline-flex items-center gap-2 bg-[#FAF8F5] hover:bg-white text-[#1B5E20] font-semibold text-sm px-6 py-3.5 rounded-full shadow transition-all active:scale-95 whitespace-nowrap self-stretch sm:self-auto justify-center"
+            className="inline-flex items-center gap-2 gold-gradient-btn text-[#08120A] font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full shadow-lg transition-all active:scale-95 whitespace-nowrap self-stretch sm:self-auto justify-center cursor-pointer relative z-10"
           >
             <span>Explore Our Science</span>
-            <ArrowDownRight className="w-4 h-4 text-[#1B5E20]" />
+            <ArrowDownRight className="w-4 h-4 text-[#08120A]" />
           </a>
         </div>
 

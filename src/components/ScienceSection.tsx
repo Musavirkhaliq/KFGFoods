@@ -42,7 +42,7 @@ export default function ScienceSection() {
       keyAspects: [
         "Naturally higher dietary fibre density",
         "Abundant resistant starch structure",
-        "Indigenous Singhara harvested from Kashmiri water bodies",
+        "Indigenous Singhara harvested from Kashmiri wetlands",
         "Preserved grain germ and micronutrient matrix",
       ],
       scientificRationale:
@@ -105,19 +105,19 @@ export default function ScienceSection() {
   ];
 
   return (
-    <section id="science" className="py-16 lg:py-24 bg-[#FAF8F5] border-b border-[#E8EEE6]">
+    <section id="science" className="py-16 lg:py-24 bg-[#08120A] border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#D97706] mb-3 font-semibold">
-            <BookOpen className="w-4 h-4 text-[#1B5E20]" />
+          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#F59E0B] mb-3 font-semibold bg-[#0D2213] px-3.5 py-1 rounded-full border border-emerald-500/30">
+            <BookOpen className="w-4 h-4 text-emerald-400" />
             <span>Preventive Food-Tech Architecture</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B5E20] leading-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             Traditional Ingredients. Thoughtful Food Innovation.
           </h2>
-          <p className="text-base sm:text-lg text-[#565e55]">
+          <p className="text-sm sm:text-base text-[#A1B0A4]">
             Four pillars behind the FreshBic formulation philosophy — engineered to retain the deep comfort of bakery treats while respecting metabolic biology.
           </p>
         </div>
@@ -129,51 +129,52 @@ export default function ScienceSection() {
             return (
               <div
                 key={pillar.id}
-                className="bg-white rounded-3xl overflow-hidden border border-[#E8EEE6] hover:border-[#2E7D32]/50 transition-all hover:shadow-xl flex flex-col group"
+                className="glass-card-dark rounded-3xl overflow-hidden border border-white/10 hover:border-amber-500/40 transition-all hover:shadow-2xl flex flex-col group"
               >
                 {/* Image preview with badge */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-black/40">
                   <Image
                     src={pillar.image}
                     alt={pillar.name}
                     fill
                     sizes="25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                   />
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold text-[#1B5E20] border border-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E10] via-transparent to-transparent" />
+                  <div className="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-mono font-bold text-emerald-300 border border-emerald-500/30">
                     {pillar.badge}
                   </div>
                 </div>
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-[#E8EEE6] text-[#1B5E20] flex items-center justify-center mb-4 group-hover:bg-[#1B5E20] group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center mb-4 group-hover:bg-emerald-500/30 transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
 
-                    <h3 className="font-serif text-xl font-bold text-[#242923] mb-1">
+                    <h3 className="font-serif text-xl font-bold text-white mb-1 group-hover:text-[#F59E0B] transition-colors">
                       {pillar.name}
                     </h3>
-                    <div className="text-xs font-mono text-[#D97706] font-semibold mb-3">
+                    <div className="text-xs font-mono text-[#F59E0B] font-semibold mb-3">
                       {pillar.tagline}
                     </div>
 
-                    <p className="text-xs text-[#565e55] leading-relaxed mb-4">
+                    <p className="text-xs text-[#A1B0A4] leading-relaxed mb-4">
                       {pillar.summary}
                     </p>
 
-                    <div className="space-y-2 mb-4 pt-3 border-t border-[#E8EEE6]">
+                    <div className="space-y-2 mb-4 pt-3 border-t border-white/10">
                       {pillar.keyAspects.map((aspect, i) => (
-                        <div key={i} className="flex items-start gap-2 text-[11px] text-[#242923]">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#2E7D32] mt-1 flex-shrink-0" />
+                        <div key={i} className="flex items-start gap-2 text-[11px] text-gray-300">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1 flex-shrink-0" />
                           <span>{aspect}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="pt-3 border-t border-[#E8EEE6] bg-[#FAF8F5] -mx-6 -mb-6 p-4 text-[11px] text-[#565e55] font-sans italic leading-tight">
-                    <strong className="text-[#1B5E20] not-italic block font-mono text-[10px] uppercase tracking-wider mb-1">
+                  <div className="pt-3 border-t border-white/10 bg-black/40 -mx-6 -mb-6 p-4 text-[11px] text-gray-300 font-sans italic leading-tight">
+                    <strong className="text-[#F59E0B] not-italic block font-mono text-[10px] uppercase tracking-wider mb-1">
                       Scientific Rationale:
                     </strong>
                     {pillar.scientificRationale}
@@ -193,7 +194,7 @@ export default function ScienceSection() {
             return (
               <div
                 key={pillar.id}
-                className="bg-white rounded-2xl border border-[#E8EEE6] overflow-hidden shadow-xs"
+                className="glass-card-dark rounded-2xl border border-white/10 overflow-hidden shadow-xs"
               >
                 <button
                   onClick={() => setActiveMobilePillar(isOpen ? "" : pillar.id)}
@@ -201,56 +202,56 @@ export default function ScienceSection() {
                   aria-expanded={isOpen}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-[#E8EEE6] text-[#1B5E20] flex items-center justify-center flex-shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center flex-shrink-0">
                       <Icon className="w-4 h-4" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="font-serif font-bold text-base text-[#242923]">
+                        <span className="font-serif font-bold text-base text-white">
                           {pillar.name}
                         </span>
-                        <span className="text-[10px] font-mono bg-[#E8EEE6] text-[#1B5E20] px-2 py-0.5 rounded-full font-semibold">
+                        <span className="text-[10px] font-mono bg-emerald-950 text-emerald-300 border border-emerald-800/40 px-2 py-0.5 rounded-full font-semibold">
                           {pillar.badge}
                         </span>
                       </div>
-                      <span className="text-xs text-[#565e55] block mt-0.5">
+                      <span className="text-xs text-gray-400 block mt-0.5">
                         {pillar.tagline}
                       </span>
                     </div>
                   </div>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#565e55] transition-transform duration-200 ${
-                      isOpen ? "rotate-180 text-[#1B5E20]" : ""
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${
+                      isOpen ? "rotate-180 text-[#F59E0B]" : ""
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 border-t border-[#E8EEE6] animate-in fade-in duration-200">
+                  <div className="px-4 pb-5 pt-1 border-t border-white/10 animate-in fade-in duration-200">
                     <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden mb-3.5">
                       <Image
                         src={pillar.image}
                         alt={pillar.name}
                         fill
-                        className="object-cover"
+                        className="object-cover opacity-80"
                       />
                     </div>
 
-                    <p className="text-xs text-[#242923] leading-relaxed mb-3">
+                    <p className="text-xs text-gray-200 leading-relaxed mb-3">
                       {pillar.summary}
                     </p>
 
-                    <div className="space-y-1.5 mb-3 bg-[#FAF8F5] p-3 rounded-xl border border-[#E8EEE6]">
+                    <div className="space-y-1.5 mb-3 bg-black/40 p-3 rounded-xl border border-white/10">
                       {pillar.keyAspects.map((aspect, i) => (
-                        <div key={i} className="flex items-start gap-2 text-xs text-[#565e55]">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#2E7D32] mt-1.5 flex-shrink-0" />
+                        <div key={i} className="flex items-start gap-2 text-xs text-gray-300">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 flex-shrink-0" />
                           <span>{aspect}</span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="text-xs text-[#565e55] italic bg-white p-2.5 rounded-lg border border-[#E8EEE6]">
-                      <strong className="text-[#1B5E20] not-italic font-mono text-[11px] block uppercase">
+                    <div className="text-xs text-gray-300 italic bg-black/60 p-2.5 rounded-lg border border-white/10">
+                      <strong className="text-[#F59E0B] not-italic font-mono text-[11px] block uppercase">
                         Scientific Rationale:
                       </strong>
                       {pillar.scientificRationale}
@@ -263,15 +264,15 @@ export default function ScienceSection() {
         </div>
 
         {/* SECONDARY SUBSECTION: FOOD SCIENCE, MADE UNDERSTANDABLE */}
-        <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E8EEE6] shadow-sm">
+        <div className="glass-card-dark rounded-3xl p-6 sm:p-10 border border-amber-500/25 shadow-2xl">
           <div className="max-w-2xl mb-8">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#1B5E20] font-bold">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#F59E0B] font-bold">
               Consumer Health Literacy
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#242923] mt-1 mb-2">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1 mb-2">
               Food Science, Made Understandable
             </h3>
-            <p className="text-xs sm:text-sm text-[#565e55]">
+            <p className="text-xs sm:text-sm text-[#A1B0A4]">
               Demystifying the biological mechanics behind carbohydrates, satiety, and gut nourishment in plain everyday language.
             </p>
           </div>
@@ -285,34 +286,34 @@ export default function ScienceSection() {
                   onClick={() => setActiveConceptIndex(isSelected ? null : index)}
                   className={`cursor-pointer rounded-2xl p-4 transition-all border ${
                     isSelected
-                      ? "bg-[#1B5E20] text-white border-[#1B5E20] shadow-md"
-                      : "bg-[#FAF8F5] hover:bg-[#E8EEE6] text-[#242923] border-[#E8EEE6]"
+                      ? "bg-gradient-to-b from-[#11311A] to-[#0A2211] text-white border-amber-500/60 shadow-[0_0_20px_rgba(217,119,6,0.25)]"
+                      : "bg-black/40 hover:bg-black/60 text-gray-200 border-white/10"
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
                     <span
                       className={`text-xs font-mono font-bold ${
-                        isSelected ? "text-emerald-200" : "text-[#D97706]"
+                        isSelected ? "text-[#F59E0B]" : "text-gray-400"
                       }`}
                     >
                       0{index + 1}
                     </span>
                     <span
                       className={`text-[10px] uppercase font-mono px-1.5 py-0.5 rounded ${
-                        isSelected ? "bg-white/20 text-white" : "bg-white text-[#565e55]"
+                        isSelected ? "bg-amber-500/20 text-[#F59E0B]" : "bg-white/5 text-gray-400"
                       }`}
                     >
                       Concept
                     </span>
                   </div>
 
-                  <h4 className="font-serif font-bold text-sm sm:text-base leading-snug mb-1">
+                  <h4 className="font-serif font-bold text-sm sm:text-base leading-snug mb-1 text-white">
                     {concept.term}
                   </h4>
 
                   <p
                     className={`text-xs font-sans mb-3 line-clamp-2 ${
-                      isSelected ? "text-emerald-100" : "text-[#565e55]"
+                      isSelected ? "text-emerald-200" : "text-gray-400"
                     }`}
                   >
                     {concept.simpleDefinition}
@@ -321,8 +322,8 @@ export default function ScienceSection() {
                   <div
                     className={`text-[11px] pt-3 border-t leading-relaxed ${
                       isSelected
-                        ? "border-white/20 text-white/90"
-                        : "border-[#E8EEE6] text-[#242923]"
+                        ? "border-amber-500/30 text-gray-200"
+                        : "border-white/10 text-gray-400"
                     }`}
                   >
                     {concept.explanation}
@@ -333,10 +334,10 @@ export default function ScienceSection() {
           </div>
 
           {/* Educational Disclaimer */}
-          <div className="mt-8 pt-4 border-t border-[#E8EEE6] flex items-center gap-2.5 text-xs text-[#565e55]">
-            <Info className="w-4 h-4 text-[#D97706] flex-shrink-0" />
+          <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2.5 text-xs text-gray-400">
+            <Info className="w-4 h-4 text-[#F59E0B] flex-shrink-0" />
             <span>
-              <strong>Scientific Disclaimer:</strong> FreshBic products are functional food items designed to support balanced eating. They are not pharmaceuticals, medical foods, or therapies, and are not intended to diagnose, treat, prevent, or cure diabetes or any cardiovascular disease.
+              <strong className="text-gray-300">Scientific Disclaimer:</strong> FreshBic products are functional food items designed to support balanced eating. They are not pharmaceuticals, medical foods, or therapies, and are not intended to diagnose, treat, prevent, or cure diabetes or any cardiovascular disease.
             </span>
           </div>
         </div>
