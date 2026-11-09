@@ -17,7 +17,7 @@ import MobileBottomBar from "@/components/MobileBottomBar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#242923] relative selection:bg-[#2E7D32] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#071109] text-[#F3F4F6] relative selection:bg-[#D97706] selection:text-[#08120A]">
       {/* Sticky Header with FSSAI top-bar and responsive navigation */}
       <Header />
 

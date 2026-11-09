@@ -53,12 +53,12 @@ export default function Header() {
       </div>
 
       {/* Floating Dark Glass Header Container */}
-      <div className="sticky top-0 z-40 w-full px-3 sm:px-6 pt-3 pb-2">
+      <div className="sticky top-0 z-40 w-full px-3 sm:px-6 pt-2.5 pb-2.5 bg-[#071109]/90 backdrop-blur-md transition-colors">
         <header
           className={`max-w-7xl mx-auto transition-all duration-300 rounded-full border ${
             scrolled
-              ? "bg-[#0A1A0E]/90 backdrop-blur-xl shadow-2xl border-amber-500/30 py-2 sm:py-2.5 px-4 sm:px-6"
-              : "bg-[#09160D]/85 backdrop-blur-lg shadow-xl border-white/10 py-2.5 sm:py-3 px-4 sm:px-6"
+              ? "bg-[#0A1A0E]/95 backdrop-blur-xl shadow-2xl border-amber-500/40 py-2 sm:py-2.5 px-4 sm:px-6"
+              : "bg-[#09160D]/90 backdrop-blur-xl shadow-2xl border-white/15 py-2.5 sm:py-3 px-4 sm:px-6"
           }`}
         >
           <div className="flex items-center justify-between">
@@ -68,7 +68,7 @@ export default function Header() {
               className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-[#D97706] rounded-full p-0.5"
               aria-label="KFGFoods Home"
             >
-              <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-lg border-2 border-amber-500/40 bg-white group-hover:scale-105 transition-transform flex-shrink-0">
+              <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-lg border-2 border-amber-500/40 bg-[#0B1E10] group-hover:scale-105 transition-transform flex-shrink-0">
                 <Image
                   src="/logo.jpeg"
                   alt="KFGFoods Logo"
