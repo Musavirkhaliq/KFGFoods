@@ -31,8 +31,8 @@ export default function HeroSection() {
       <section className="relative overflow-hidden bg-[#071109] pt-6 sm:pt-10 pb-16 lg:pb-24 border-b border-emerald-950/70">
         
         {/* Atmospheric Ambient Glows */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-emerald-900/15 blur-[120px] pointer-events-none" />
-        <div className="absolute top-1/3 left-10 w-[450px] h-[450px] rounded-full bg-amber-600/10 blur-[130px] pointer-events-none" />
+        <div className="absolute top-1/4 right-1/4 w-72 sm:w-[500px] h-72 sm:h-[500px] rounded-full bg-emerald-900/15 blur-[100px] sm:blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/3 left-0 sm:left-10 w-64 sm:w-[450px] h-64 sm:h-[450px] rounded-full bg-amber-600/10 blur-[100px] sm:blur-[130px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">

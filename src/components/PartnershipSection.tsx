@@ -189,7 +189,7 @@ export default function PartnershipSection() {
                       const formEl = document.getElementById("b2b-form");
                       formEl?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-xs font-mono text-[#F59E0B] font-semibold flex items-center gap-1.5 hover:underline pt-3 border-t border-white/10 cursor-pointer"
+                    className="text-xs font-mono text-[#F59E0B] font-semibold flex items-center justify-between sm:justify-start gap-1.5 hover:underline py-2.5 min-h-[44px] border-t border-white/10 cursor-pointer w-full transition-colors"
                   >
                     <span>Inquire for this track</span>
                     <ArrowRight className="w-3.5 h-3.5" />

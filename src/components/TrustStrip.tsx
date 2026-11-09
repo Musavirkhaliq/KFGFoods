@@ -43,7 +43,7 @@ export default function TrustStrip() {
         
         {/* Floating Dark Glass Curved Strip */}
         <div className="glass-card-dark rounded-3xl p-5 sm:p-6 border border-amber-500/25 shadow-xl">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4 items-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-4 items-center">
             {trustItems.map((item, idx) => {
               const Icon = item.icon;
               return (

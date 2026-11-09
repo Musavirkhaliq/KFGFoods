@@ -99,12 +99,12 @@ export default function Footer() {
               <span className="w-2 h-2 rounded-full bg-[#F59E0B]"></span>
               <span>Our Creations</span>
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
+            <ul className="space-y-1 text-xs sm:text-sm text-gray-300">
               {productLinks.map((item, idx) => (
                 <li key={idx}>
                   <a
                     href={item.href}
-                    className="hover:text-[#F59E0B] transition-colors flex items-center gap-1.5"
+                    className="hover:text-[#F59E0B] transition-colors inline-flex items-center gap-1.5 py-1.5"
                   >
                     <ChevronRight className="w-3.5 h-3.5 text-emerald-400" />
                     <span>{item.name}</span>
@@ -120,12 +120,12 @@ export default function Footer() {
               <span className="w-2 h-2 rounded-full bg-[#F59E0B]"></span>
               <span>Explore</span>
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
+            <ul className="space-y-1 text-xs sm:text-sm text-gray-300">
               {quickLinks.slice(0, 6).map((item, idx) => (
                 <li key={idx}>
                   <a
                     href={item.href}
-                    className="hover:text-[#F59E0B] transition-colors flex items-center gap-1.5"
+                    className="hover:text-[#F59E0B] transition-colors inline-flex items-center gap-1.5 py-1.5"
                   >
                     <ChevronRight className="w-3.5 h-3.5 text-emerald-400" />
                     <span>{item.name}</span>
