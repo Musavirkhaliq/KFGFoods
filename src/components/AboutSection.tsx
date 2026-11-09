@@ -60,9 +60,9 @@ export default function AboutSection() {
             {/* Micro Brand Badge */}
             <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 glass-card-dark rounded-2xl p-4 shadow-2xl border border-amber-500/30 max-w-[240px]">
               <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-amber-500/40 flex-shrink-0 bg-white">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-amber-500/40 flex-shrink-0 bg-[#0B1E10]">
                   <Image
-                    src="/logo.jpeg"
+                    src="/logo.png"
                     alt="KFGFoods Brand"
                     fill
                     sizes="48px"

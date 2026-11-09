@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/icon.png", sizes: "192x192", type: "image/png" },
-      { url: "/logo.jpeg", sizes: "1254x1254", type: "image/jpeg" },
+      { url: "/logo.png", sizes: "1231x1231", type: "image/png" },
     ],
     apple: [
       { url: "/icon.png", sizes: "192x192", type: "image/png" },
@@ -72,9 +72,9 @@ export const metadata: Metadata = {
       "KFGFoods — Wholesome Food, Happier You. Discover FreshBic healthy bakery, millet premixes, Singhara cookies, and Kashmiri delicacies.",
     images: [
       {
-        url: "/logo.jpeg",
-        width: 1254,
-        height: 1254,
+        url: "/logo.png",
+        width: 1231,
+        height: 1231,
         alt: "KFGFoods Official Brand Logo — Wholesome Food, Happier You",
       },
     ],
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "KFGFoods — FreshBic | Wholesome Food, Happier You",
     description:
       "Preventive food-tech and conscious healthy bakery crafted with Kashmiri water chestnut, millets, and dates.",
-    images: ["/logo.jpeg"],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -107,7 +107,7 @@ const jsonLd = {
       "@id": "https://freshbic.in/#organization",
       name: "KFGFoods",
       legalName: "KFG Foods Private Limited",
-      logo: "https://freshbic.in/logo.jpeg",
+      logo: "https://freshbic.in/logo.png",
       brand: {
         "@type": "Brand",
         name: "KFGFoods",
@@ -144,7 +144,7 @@ const jsonLd = {
       "@type": "FoodEstablishment",
       "@id": "https://freshbic.in/#establishment",
       name: "KFGFoods — FreshBic",
-      image: "https://freshbic.in/logo.jpeg",
+      image: "https://freshbic.in/logo.png",
       telephone: "+916006922754",
       address: {
         "@type": "PostalAddress",

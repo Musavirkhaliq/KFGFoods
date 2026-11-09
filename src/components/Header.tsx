@@ -70,7 +70,7 @@ export default function Header() {
             >
               <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-lg border-2 border-amber-500/40 bg-[#0B1E10] group-hover:scale-105 transition-transform flex-shrink-0">
                 <Image
-                  src="/logo.jpeg"
+                  src="/logo.png"
                   alt="KFGFoods Logo"
                   fill
                   priority
@@ -266,8 +266,8 @@ export default function Header() {
           {mobileMenuOpen && (
             <div className="xl:hidden mt-3 pt-3 border-t border-emerald-900/60 pb-4 animate-in slide-in-from-top duration-200">
               <div className="flex items-center gap-3 p-3 bg-[#050D06] rounded-2xl mb-3 border border-amber-500/20">
-                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-500/30 flex-shrink-0 bg-white">
-                  <Image src="/logo.jpeg" alt="KFGFoods" fill className="object-cover" />
+                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-500/30 flex-shrink-0 bg-[#0B1E10]">
+                  <Image src="/logo.png" alt="KFGFoods" fill className="object-cover" />
                 </div>
                 <div>
                   <div className="font-serif font-black text-sm text-white">KFGFoods</div>

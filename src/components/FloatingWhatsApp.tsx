@@ -45,9 +45,9 @@ export default function FloatingWhatsApp() {
           {/* Header */}
           <div className="bg-[#050D06] text-white p-4 flex items-center justify-between border-b border-white/10">
             <div className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-500/40 flex-shrink-0 bg-white">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-500/40 flex-shrink-0 bg-[#0B1E10]">
                 <Image
-                  src="/logo.jpeg"
+                  src="/logo.png"
                   alt="KFGFoods Desk"
                   fill
                   className="object-cover"

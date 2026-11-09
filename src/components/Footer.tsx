@@ -49,9 +49,9 @@ export default function Footer() {
           {/* Col 1: Brand & Identity (4 cols) */}
           <div className="lg:col-span-4 flex flex-col space-y-4">
             <div className="flex items-center gap-3.5">
-              <div className="relative w-14 h-14 rounded-full overflow-hidden bg-white border-2 border-amber-500/40 flex-shrink-0 shadow-xl">
+              <div className="relative w-14 h-14 rounded-full overflow-hidden bg-[#0B1E10] border-2 border-amber-500/40 flex-shrink-0 shadow-xl">
                 <Image
-                  src="/logo.jpeg"
+                  src="/logo.png"
                   alt="KFGFoods Brand Emblem"
                   fill
                   sizes="56px"

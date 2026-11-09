@@ -26,7 +26,7 @@ async function verifyLiveServer() {
 
   console.log("Checking brand credentials...");
   assert(html.includes("KFGFoods"), "Brand name KFGFoods must be present");
-  assert(html.includes("logo.jpeg") || html.includes("Logo.jpeg"), "Logo image must be present");
+  assert(html.includes("logo.png") || html.includes("logo.jpeg") || html.includes("Logo.jpeg"), "Logo image must be present");
   assert(html.includes("Wholesome Food, Happier You"), "Brand tagline from logo must be present");
   assert(html.includes("11023470000115"), "FSSAI license must be present");
   assert(html.includes("Lassipora"), "SIDCO Lassipora industrial unit must be present");
