@@ -22,7 +22,7 @@ export default function ScientificEvidence() {
   const [selectedReference, setSelectedReference] = useState<number | null>(null);
 
   return (
-    <section id="evidence" className="py-16 lg:py-24 bg-[#08120A] border-b border-emerald-950/70">
+    <section id="evidence" className="py-16 lg:py-24 bg-[#08120A]/85 backdrop-blur-sm border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

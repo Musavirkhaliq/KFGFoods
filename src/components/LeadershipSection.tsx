@@ -6,7 +6,7 @@ import { EXECUTIVE_TEAM, ADVISORY_BOARD, Leader, Advisor } from "@/data/leadersh
 
 export default function LeadershipSection() {
   return (
-    <section id="leadership" className="py-16 lg:py-24 bg-[#08120A] border-b border-emerald-950/70">
+    <section id="leadership" className="py-16 lg:py-24 bg-[#08120A]/85 backdrop-blur-sm border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

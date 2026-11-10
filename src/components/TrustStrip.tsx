@@ -38,7 +38,7 @@ export default function TrustStrip() {
   ];
 
   return (
-    <section className="bg-[#050D06] py-10 border-b border-emerald-950/70">
+    <section className="bg-[#050D06]/75 backdrop-blur-xs py-10 border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Floating Dark Glass Curved Strip */}

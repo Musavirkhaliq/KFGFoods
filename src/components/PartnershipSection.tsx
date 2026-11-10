@@ -103,7 +103,7 @@ export default function PartnershipSection() {
   };
 
   return (
-    <section id="partnership" className="py-16 lg:py-24 bg-[#050D06] border-b border-emerald-950/70">
+    <section id="partnership" className="py-16 lg:py-24 bg-[#050D06]/85 backdrop-blur-sm border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

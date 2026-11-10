@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
 
       {/* Main Page Landmark */}
-      <main className="flex-1 w-full overflow-hidden">
+      <main className="flex-1 w-full">
         {/* Section 1: Hero Experience & Product Philosophy Strip */}
         <HeroSection />
 

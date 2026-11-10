@@ -6,7 +6,7 @@ import { Mountain, Heart, Users, Sparkles, CheckCircle2 } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-16 lg:py-24 bg-[#071109] border-b border-emerald-950/70">
+    <section id="about" className="py-16 lg:py-24 bg-[#071109]/80 backdrop-blur-xs border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

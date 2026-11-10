@@ -19,7 +19,7 @@ export default function ProductPortfolio() {
   }, [activeCategory]);
 
   return (
-    <section id="products" className="py-16 lg:py-24 bg-[#050D06] border-b border-emerald-950/70">
+    <section id="products" className="py-16 lg:py-24 bg-[#050D06]/85 backdrop-blur-sm border-b border-emerald-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -144,7 +144,7 @@ export default function HealthAssessment() {
   const recommendation = currentStep === 4 ? getRecommendation() : null;
 
   return (
-    <section id="assessment" className="py-16 lg:py-24 bg-[#08120A] border-b border-emerald-950/70">
+    <section id="assessment" className="py-16 lg:py-24 bg-[#08120A]/85 backdrop-blur-sm border-b border-emerald-950/70">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
