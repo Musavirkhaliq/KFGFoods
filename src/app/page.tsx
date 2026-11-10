@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/TrustStrip";
+import CraftsmanshipVideoSection from "@/components/CraftsmanshipVideoSection";
 import AboutSection from "@/components/AboutSection";
 import HealthChallengeSection from "@/components/HealthChallengeSection";
 import ScienceSection from "@/components/ScienceSection";
@@ -28,6 +29,9 @@ export default function Home() {
 
         {/* Section 2: Brand Trust Strip */}
         <TrustStrip />
+
+        {/* Cinematic Scroll-Reveal Artisanal Kitchen Video Showcase */}
+        <CraftsmanshipVideoSection />
 
         {/* Section 3: About KFG Foods */}
         <AboutSection />

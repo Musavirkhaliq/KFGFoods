@@ -407,24 +407,15 @@ export default function HeroSection() {
               The KFGFoods Journey: From Lassipora to Kashmir&apos;s Homes
             </h3>
 
-            <div className="relative aspect-video rounded-2xl overflow-hidden bg-black mb-4 border border-white/10">
-              <Image
-                src="/dark-story-scene.jpg"
-                alt="Story Video Preview"
-                fill
-                className="object-cover opacity-80"
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-black mb-4 border border-white/10 shadow-2xl">
+              <video
+                src="/chef-craftsmanship.mp4"
+                poster="/chef-poster.jpg"
+                controls
+                autoPlay
+                playsInline
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 p-4 text-center">
-                <div className="w-14 h-14 rounded-full bg-amber-500 text-black flex items-center justify-center mb-3 shadow-[0_0_20px_#F59E0B]">
-                  <Play className="w-6 h-6 fill-current ml-1" />
-                </div>
-                <p className="text-sm font-semibold text-white">
-                  Documentary & Industrial Unit Tour (Lassipora, Pulwama)
-                </p>
-                <p className="text-xs text-gray-300 mt-1">
-                  Discover how our food scientists formulate water chestnut cookies & healthy bakery staples.
-                </p>
-              </div>
             </div>
 
             <div className="flex items-center justify-between text-xs text-gray-400 font-mono">

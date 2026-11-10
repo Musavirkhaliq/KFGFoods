@@ -28,8 +28,10 @@ export function createWhatsAppUrl(message: string): string {
 /**
  * Pre-filled message for general enquiries
  */
-export function getGeneralWhatsAppUrl(): string {
-  const msg = "Hello KFGFoods, I would like to know more about your healthy bakery and preventive nutrition products.";
+export function getGeneralWhatsAppUrl(customMessage?: string): string {
+  const msg =
+    customMessage ||
+    "Hello KFGFoods, I would like to know more about your healthy bakery and preventive nutrition products.";
   return createWhatsAppUrl(msg);
 }
 
