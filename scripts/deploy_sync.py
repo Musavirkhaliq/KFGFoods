@@ -11,13 +11,14 @@ cmd = (
     "--exclude 'node_modules' "
     "--exclude '.git' "
     "--exclude 'temp-app' "
+    "--exclude 'Chef_preparing_healthy_Kashmiri_*' "
     "-e 'ssh -o StrictHostKeyChecking=no' "
     "./ "
     f"{DEST}"
 )
 
 print(f"Running rsync: {cmd}")
-child = pexpect.spawn(cmd, timeout=300)
+child = pexpect.spawn("/bin/bash", ["-c", cmd], timeout=300)
 i = child.expect([r'[pP]assword:', pexpect.EOF, pexpect.TIMEOUT])
 if i == 0:
     child.sendline(PASSWORD)
