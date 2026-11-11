@@ -10,6 +10,7 @@ cmd = (
     "rsync -avz --delete "
     "--exclude 'node_modules' "
     "--exclude '.git' "
+    "--exclude '.next' "
     "--exclude 'temp-app' "
     "--exclude 'Chef_preparing_healthy_Kashmiri_*' "
     "-e 'ssh -o StrictHostKeyChecking=no' "

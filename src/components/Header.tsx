@@ -71,7 +71,7 @@ export default function Header() {
               <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-lg border-2 border-amber-500/40 bg-[#0B1E10] group-hover:scale-105 transition-transform flex-shrink-0">
                 <Image
                   src="/logo.png"
-                  alt="KFGFoods Logo"
+                  alt="KFGFoods Official Brand Logo — Wholesome Food, Happier You"
                   fill
                   priority
                   sizes="48px"

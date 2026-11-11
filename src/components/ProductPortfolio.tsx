@@ -100,7 +100,7 @@ export default function ProductPortfolio() {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/40">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={`FreshBic ${product.name} — 100% Maida-Free Sugar-Free Healthy Bakery Kashmir`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"

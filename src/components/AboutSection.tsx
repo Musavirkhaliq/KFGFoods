@@ -63,7 +63,7 @@ export default function AboutSection() {
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border border-amber-500/40 flex-shrink-0 bg-[#0B1E10]">
                   <Image
                     src="/logo.png"
-                    alt="KFGFoods Brand"
+                    alt="KFGFoods Brand Emblem — Lassipora Pulwama Kashmir"
                     fill
                     sizes="48px"
                     className="object-cover"
