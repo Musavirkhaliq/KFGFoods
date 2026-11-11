@@ -36,7 +36,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://freshbic.in"),
+  metadataBase: new URL("https://kfgfoods.com"),
   title: "KFGFoods — FreshBic | Sugar-Free, Maida-Free Healthy Bakery & Nutrition in Kashmir",
   description:
     "KFGFoods (KFG Foods Private Limited) — Wholesome Food, Happier You. Featuring FreshBic healthy bakery, Singhara water chestnut cookies, dates laddoos, and Kashmiri delicacies.",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://freshbic.in",
+    url: "https://kfgfoods.com",
     siteName: "KFGFoods | FreshBic",
     title: "KFGFoods — FreshBic | Sugar-Free, Maida-Free Healthy Bakery & Nutrition in Kashmir",
     description:
@@ -111,10 +111,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://freshbic.in/#organization",
+      "@id": "https://kfgfoods.com/#organization",
       name: "KFGFoods",
       legalName: "KFG Foods Private Limited",
-      logo: "https://freshbic.in/logo.png",
+      logo: "https://kfgfoods.com/logo.png",
       brand: {
         "@type": "Brand",
         name: "KFGFoods",
@@ -127,7 +127,7 @@ const jsonLd = {
       },
       description:
         "Preventive food-tech enterprise in Jammu & Kashmir innovating sugar-free, maida-free functional bakery and nutrition.",
-      url: "https://freshbic.in",
+      url: "https://kfgfoods.com",
       telephone: "+916006922754",
       address: {
         "@type": "PostalAddress",
@@ -149,9 +149,9 @@ const jsonLd = {
     },
     {
       "@type": "FoodEstablishment",
-      "@id": "https://freshbic.in/#establishment",
+      "@id": "https://kfgfoods.com/#establishment",
       name: "KFGFoods — FreshBic",
-      image: "https://freshbic.in/logo.png",
+      image: "https://kfgfoods.com/logo.png",
       telephone: "+916006922754",
       address: {
         "@type": "PostalAddress",

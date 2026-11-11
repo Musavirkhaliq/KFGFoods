@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://freshbic.in/sitemap.xml",
+    sitemap: "https://kfgfoods.com/sitemap.xml",
   };
 }
